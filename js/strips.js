@@ -1,8 +1,9 @@
 $(document).ready(function() {
-  $("#Cream").submit(function(event) {
+  console.log("DOM ready");
+  $("#show").click(function(event) {
     var flavorIds = ["flavor1", "flavor2", "flavor3"];
     var flavors = ["vanilla", "candy", "cotton-candy"];
-
+    console.log("button pressed.");
     // 1. loop through flavors
     // console.log the flavor
 
@@ -23,10 +24,6 @@ $(document).ready(function() {
       // $("." + thingsId).text(userInput).val();
     });
 
-    // $("#story").show();
     event.preventDefault();
   });
-
-
-
 });
